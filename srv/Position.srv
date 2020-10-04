@@ -1,0 +1,6 @@
+float64[] joint_positions
+float64 v_scale
+float64 duration_low_bound
+float64 start_duration
+---
+int8 success
