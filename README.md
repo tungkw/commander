@@ -25,13 +25,12 @@ what this node do:
 4. send trajactory to 'scaled_pos_joint_traj_controller/command'
 
 ## send request
-2. script
 - msg format
 ```
-float64[] joint_positions     # target position
-float64 v_scale               # velocity (rad/sec) [recommend 0.1]
-float64 duration_low_bound    # lower bound of duration (sec) from current position to target position, prevent too fast movement [recommend 1.0]
-float64 start_duration        # set for dealing delay [recommend 0.5]
+float64[] joint_positions     # target joint positions
+float64 v_scale               # (rad/sec) velocity [recommend 0.1]
+float64 duration_low_bound    # (sec) lower bound of duration from current position to target position, prevent too fast movement [recommend 1.0]
+float64 start_duration        # (sec) set for dealing delay [recommend 0.5]
 ---
 int8 success                  # whether ikfast compute inverse kinematics successfully. if false, no trajectory is made. 
 ```
